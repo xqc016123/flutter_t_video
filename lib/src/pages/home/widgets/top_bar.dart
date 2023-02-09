@@ -23,8 +23,8 @@ class _TabBarState extends State<TopBar> with SingleTickerProviderStateMixin {
     super.initState();
 
     /// 读取tabbar标题
-    MockService.getChannels().then((value) => {
-      _tabbars = value.my.items
+    MockService.getChannels().then((value) {
+      _tabbars = value.my.items;
     });
   }
 
